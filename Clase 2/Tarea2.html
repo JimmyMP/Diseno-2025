@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo</title>
+    <style>
+        
+        *{ margin:0; padding:0; }
+        body{ text-align: center; font-family: Helvetica, Arial, sans-serif; }
+        h1 { padding:1vh 15vw; }
+        h2, p{ padding:.5vh 0; }
+        header, article, footer{ padding:5vh 0; }
+        header, article{ border-bottom:1px dotted black; }
+        div{ padding:2vh 6vw}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tufte refers to data-ink as the non-erasable ink used for the presentation of data</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Paridades de Real:Brasil (moneda/dólar de los Estados Unidos de América)</h2>
+            <p>Con una <a href="https://datavizcatalogue.com/ES/metodos/grafica_de_linea.html" target="_blank">gráfica de línea</a></p>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 210">
+                    <g transform="translate(0,195) scale(1,-1)" id="lineas"><!--aquí dentro va la polyline--></g>
+                    <g id="years"><!--aquí dentro van los textos con los años--></g>
+                </svg>
+            </div>
+        </article>
+        <article>
+            <h2>Índice de Criminalidad en los distintos países de América del Sur</h2>
+            <p>Con una <a href="https://datavizcatalogue.com/ES/metodos/graficos_de_barras.html" target="_blank">gráfica de barras</a></p>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 160" id="barras"><!--aquí dentro van los grupos con rectangulo y textos--></svg>
+            </div> 
+        </article>
+    </main>
+    <script>
+        //PRIMERA GRÁFICA
+
+        // Datos de https://es.wikipedia.org/wiki/Anexo:Crecimiento_poblacional_de_Santiago_de_Chile
+
+        const lineal = {
+            censos: [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
+            censados: [23513, 33278, 34910, 31903, 36427, 39398, 51446, 53962, 51631, 49966, 53789],
+        };
+
+        const graficaLineas = document.querySelector("#lineas");
+
+        let coordenadas = "";
+
+        let momentos = ""
+
+        // la manera de despliegue de las coordenadas del Eje Y nos exige un ajuste, que copiamos de https://stackoverflow.com/questions/39560206/change-0-0-from-svg
+
+        lineal.censados.forEach((d, i) => {
+            coordenadas += ((i * 50) + 7) + "," + (d * 0.0025) + " ";
+            momentos += `<text x="${i*50}" y="205" font-size="6">${lineal.censos[i]}</text> `;
+
+        })
+
+        console.log(coordenadas);
+
+        console.log(momentos);
+
+        graficaLineas.innerHTML += `<polyline points="${coordenadas}" fill="none" stroke="black" stroke-width="0.5"/>`;
+
+        document.querySelector("#years").innerHTML += momentos;
+
+
+        // SEGUNDA GRÁFICA 
+
+        // Datos de https://es.wikipedia.org/wiki/Anexo:Regiones_de_Chile_por_poblaci%C3%B3n
+
+        const barras = [
+                {region:"Venezuela", numero:80.70},
+                {region:"Perú", numero:67.12},
+                {region:"Guyana", numero:66.35},
+                {region:"Bolivia", numero:65.00},
+                {region:"Brasil", numero:64.53},
+                {region:"Argentina", numero:63.38},
+                {region:"Ecuador", numero:62.50},
+                {region:"Colombia", numero:60.86},
+                {region:"Chile", numero:60.48},
+                {region:"Paraguay", numero:59.82},
+                {region:"Uruguay", numero:51.99}
+            ]
+
+        const graficaBarras = document.querySelector("#barras");
+
+        barras.forEach((d, i) => {
+            graficaBarras.innerHTML += `<g transform="translate(0,${i*15})">
+                <rect x="0" y="0" width="${d.numero*5}" height="10" />
+                <text x="3" y="7" fill="white" font-size="5">${d.region}</text>
+                <text x="${(d.numero*5)+3}" y="7" font-size="6">${new Intl.NumberFormat("es-ES").format(d.numero)}</text>
+            </g>`
+        });
+    </script>
+</body>
+
+</html>
