@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>TITANIC v/s ICEBERG</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+            body{ font-family: "Roboto Condensed", sans-serif; font-weight:300; color:#333; background:#fcfeff; }
+            
+            div{ width:min(95%,700px); margin:0 auto;}
+            
+            a{color:#000;}
+
+            a:hover{color:#333;}
+            
+            header{text-align: center; }
+
+            header svg{ width: 75%; margin: 0 auto;}
+
+            @keyframes flota {
+                0% {transform: translateY(0);}
+                100% {transform: translateY(10px);}
+
+            }
+
+            /* OJO */
+            @keyframes cruza {
+                0% { transform: translateX(-180px); }
+                100% { transform: translateX(180px); }
+            }
+
+
+            polygon#iceberg { animation: flota 3s ease infinite alternate; }
+
+            line#mar { animation: flota 2s ease infinite alternate; }
+
+            h1 { font-size: calc(1rem + 3vw); line-height: 1; font-weight: 200;}
+
+            h1 > span {font-size: 90%; color: #111; font-weight: 200; display: inline-block; margin:0 0.5rem}
+
+            p {margin:0.9rem 0.3rem;}
+
+            footer{ border-top:1px solid #eee; margin-top:3rem; padding-bottom:3rem; }
+            
+            footer > p{ display:flex; justify-content: space-between; }
+
+            td img { width:2.5rem;
+            height:2.5rem; 
+            border-radius:50% 50%;
+            margin:0.25rem;
+            box-shadow: 0 0 5px pink;
+            }
+
+            div#bote { margin-top: 10vh;
+                width: 100%;
+                text-align: center;
+            }
+
+            div#bote img { width:30%;
+                margin: 0 auto;
+                animation: cruza 3s ease infinite alternate ;
+            }
+
+            div#cierre { margin-top: 10vh;
+                width: 100%;
+                text-align: center;
+
+            }
+
+            div#cierre img { width:20%;
+                margin: 0 auto;
+                animation: flota 1s ease infinite alternate;
+
+            }
+
+
+            table {
+                padding-top: 2rem;
+                padding-bottom:2rem;
+
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <header>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" id="cabecera" fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="200,20 250,100 300,150 250,350 200,380 125,275 90,200 100,125 180,25" id="iceberg" />
+                    <line x1="10" y1="100" x2="390" y2="100" id="mar" />
+                </svg> 
+                
+                <h1>TITANIC <span><sup>v</sup>/<small>s</small></span> ICEBERG</h1>
+            
+            </header>
+            <main>
+                
+                <p>Usaremos datos disponibles en línea, en <a href="https://github.com/datasciencedojo/datasets/blob/master/titanic.csv" target="_blank">esta tabla</a>. Con tales datos podremos visualizar el destino de las <span id="dato"></span> personas que iban a bordo del Titanic, divididas en tres clases:</p>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 892 150">
+                    <g id="segmentos"></g>
+                </svg>
+                
+                <p>Aprovechando la ficción y algunas condiciones lógicas: Calculemos el número de personas como  <span id="nrose"></span><a href="https://es.wikipedia.org/wiki/Rose_DeWitt_Bukater" target="_blank"> Rose DeWitt Bukater</a> y <span id="njack"></span><a href="https://es.wikipedia.org/wiki/Jack_Dawson" target="_blank"> Jack Dawson</a></p>
+
+            <table>
+                <tr>
+                    <td id="LasRoses"></td>
+                    <td id="LosJacks"></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td> 
+                        <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#f4e5ff" stroke-width="3"></circle>
+                        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d499ff" stroke-width="3" stroke-dasharray="37 63" stroke-dashoffset="0"></circle>
+                        <text x="21" y="19" font-size="9" dominant-baseline="middle" text-anchor="middle">37%</text>
+                        <text x="21" y="25" font-size="3" dominant-baseline="middle" text-anchor="middle">PRIMERA CLASE</text> 
+                        </svg>
+                    </td> 
+                    <td>
+                        <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#f4e5ff" stroke-width="3"></circle>
+                        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d499ff" stroke-width="3" stroke-dasharray="53 47" stroke-dashoffset="0"></circle>
+                        <text x="21" y="19" font-size="9" dominant-baseline="middle" text-anchor="middle">53%</text>
+                        <text x="21" y="25" font-size="3" dominant-baseline="middle" text-anchor="middle">SEGUNDA CLASE</text> 
+                    </svg>
+                    </td> 
+                    <td>
+                        <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+                        <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#f4e5ff" stroke-width="3"></circle>
+                        <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d499ff" stroke-width="3" stroke-dasharray="76 24" stroke-dashoffset="0"></circle>
+                        <text x="21" y="19" font-size="9" dominant-baseline="middle" text-anchor="middle">76%</text>
+                        <text x="21" y="25" font-size="3" dominant-baseline="middle" text-anchor="middle">TERCERA CLASE</text> 
+                    </svg>
+                    </td> 
+                </tr>
+            </table>
+
+            <div id="bote">
+                <img src="images/motor.png"/>
+            </div>
+
+            <div id="cierre">
+                <img src="https://www.gerdarntz.org/sites/gerdarntz.org/files/GMDH02_00290.gif"/>
+            </div>
+
+            </main>
+            <footer>
+                <p><a href="https://github.com/profesorfaco/opr/tree/main/clase-04">DNO097</a> <a href="https://github.com/JimmyMP">Alexis Mimbela</a></p>
+            </footer>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <script>
+            var primera = 0;
+            var segunda = 0;
+            var tercera = 0;
+            const total = document.querySelector("#dato");
+            const clases = document.querySelector("#segmentos");
+            var rose = 0;
+            var jack = 0;
+
+            const ellas = document.querySelector("#LasRoses");
+            const ellos = document.querySelector("#LosJacks");
+
+            Papa.parse("https://raw.githubusercontent.com/datasciencedojo/datasets/refs/heads/master/titanic.csv", {
+                download: true,
+                header: true,
+                dynamicTyping: true,
+                
+                complete: function (results) {
+                    console.log(results);
+                    total.innerHTML = results.data.length;
+                    
+                    //reviso los datos
+
+                    results.data.forEach(d => {
+                        if(d.Pclass == 1){
+                            primera = primera+1;
+                        if (d.Survived == 1 && d.Sex == "female" && d.Age >15 && d.Age < 19){
+                            
+                            rose = rose+1;
+                        }
+
+                        } else if(d.Pclass == 2){
+                            segunda = segunda+1;
+                        }else{
+                            tercera = tercera+1;
+                            if (d.Survived == 0 && d.Sex == "male" && d.Age >19 && d.Age < 24){
+                            
+                            jack = jack+1;
+                        }
+                        }
+                    })
+
+                    console.log (rose);
+                    console.log (jack);
+
+                    document.querySelector("#nrose").innerHTML = rose;
+                    document.querySelector("#njack").innerHTML = jack;
+
+                    for(let xx = 0; xx < rose ; xx++) {ellas.innerHTML+= "<img src='images/rose.png'>";
+                    
+                    }
+                        for(let xy = 0; xy < jack; xy++) {ellos.innerHTML += "<img src='images/jack.png'>";
+                    }
+
+                    clases.innerHTML = `<rect x="0" y="0" width="${primera}" height="100" fill="#f4e5ff"></rect>
+                    <text x="${primera/2}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${primera}</text>
+                    <text x="${primera/2}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#333">PRIMERA CLASE</text>`
+
+                    clases.innerHTML += `<rect x="${primera}" y="0" width="${segunda}" height="100" fill="#deb2ff"></rect>
+                    <text x="${primera+(segunda/2)}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${segunda}</text>
+                    <text x="${primera+(segunda/2)}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#333">SEGUNDA CLASE</text>`
+
+                   clases.innerHTML += `<rect x="${primera+segunda}" y="0" width="${tercera}" height="100" fill="#d499ff"></rect>
+                    <text x="${primera+segunda+(tercera/2)}" y="60" font-size="48" dominant-baseline="middle" text-anchor="middle" fill="#fff">${tercera}</text>
+                    <text x="${primera+segunda+(tercera/2)}" y="125" font-size="18" dominant-baseline="middle" text-anchor="middle" fill="#333">TERCERA CLASE</text>`
+
+                } 
+
+            }); 
+
+        </script>
+    </body>
+</html>
