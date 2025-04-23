@@ -1,5 +1,5 @@
 body{
-    background-color: yellow;
+    background-color: rgba(223, 196, 20, 0.9);;
     text-align: center;
 }
 
@@ -24,9 +24,11 @@ th,td{
     pading: 0.2rem;
     justify-content: center;
 }
-
+th:nth-child(1), th:nth-child(1){
+    text-align: left;
+}
 th:nth-child(2), th:nth-child(2){
-    text-align: center;
+    text-align: left;
     width: 210px;
 }
 svg{
