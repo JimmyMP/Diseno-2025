@@ -22,8 +22,13 @@ tale,th,td{
 
 th,td{
     pading: 0.2rem;
+    justify-content: center;
 }
 
 th:nth-child(2), th:nth-child(2){
     text-align: center;
+    width: 210px;
+}
+svg{
+    background: black;
 }
