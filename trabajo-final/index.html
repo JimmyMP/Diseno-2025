@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La evolución del cine de ciencia ficción (1950–2020)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="main-title">La evolución del cine de ciencia ficción (1950–2020)</h1>
+    <p class="subtitle">Un análisis visual de tendencias, duración, crítica, subgéneros y países de origen</p>
+  </header>
+  <main>
+    <section id="intro">
+      <h2>Introducción</h2>
+      <p style="text-align:center; max-width:700px; margin:0 auto;">El cine de ciencia ficción ha sido un reflejo de los avances tecnológicos, los miedos sociales y la imaginación colectiva. Este proyecto explora cómo ha evolucionado el género desde 1950 hasta 2020, analizando la cantidad de películas, su duración, la recepción crítica, los subgéneros predominantes y los países de origen más relevantes.</p>
+      <div class="images-row">
+        <img src="images/poster1.jpg" alt="Póster clásico de ciencia ficción" />
+        <img src="images/poster2.jpg" alt="Escena icónica de película de ciencia ficción" />
+        <img src="images/poster3.jpg" alt="Poster de pelicula mas larga de ciencia ficción" />
+      </div>
+    </section>
+    <section id="timeline-section">
+      <h2>Evolución de la producción</h2>
+      <p style="text-align:center; max-width:600px; margin:0 auto;">¿Cuántas películas de ciencia ficción se han producido por década? Observa la tendencia a lo largo del tiempo.</p>
+      <div id="timeline-chart" class="viz"></div>
+      <p class="analysis-comment" style="text-align:center; color:#F9E166; font-weight:700; margin-top:1.5rem;">Se observa un crecimiento sostenido en la producción de películas de ciencia ficción, con un gran salto a partir de los años 80 y un pico en la década de 2010, reflejando el auge del género en la cultura popular y el avance tecnológico.</p>
+    </section>
+    <section id="top-movies-section">
+      <h2>Top 10 películas de ciencia ficción mejor puntuadas por década</h2>
+      <p style="text-align:center; max-width:600px; margin:0 auto;">Descubre las películas más aclamadas de cada década. Usa los botones para explorar el ranking de cada periodo.</p>
+      <div id="top-movies-controls" style="text-align:center; margin-bottom:1.5rem;"></div>
+      <div id="top-movies-table" class="viz" style="overflow-x:auto;"></div>
+      <p class="analysis-comment" style="text-align:center; color:#F9E166; font-weight:700; margin-top:1.5rem;">
+        El ranking revela que cada década tiene clásicos destacados, pero a partir de los años 70 y 80 las películas de ciencia ficción logran puntajes críticos más altos y mayor presencia en la cultura popular. El acceso directo a IMDb permite explorar la relevancia y el impacto de cada título en su contexto histórico.
+      </p>
+    </section>
+    <section id="duration-bubble-section">
+      <h2>Duración y puntaje de las mejores películas</h2>
+      <p style="text-align:center; max-width:600px; margin:0 auto;">Cada burbuja representa una película destacada: el eje vertical es la duración (minutos), el tamaño indica el puntaje crítico y puedes hacer clic en cada burbuja para ver más detalles en IMDb.</p>
+      <div id="duration-bubble-chart" class="viz-bubble"></div>
+      <p class="analysis-comment" style="text-align:center; color:#F9E166; font-weight:700; margin-top:1.5rem;">Las películas mejor valoradas tienden a tener duraciones variadas, pero se observa que muchas de las más extensas también logran altos puntajes, lo que sugiere que la ambición narrativa y la profundidad temática pueden estar asociadas a una mejor recepción crítica.</p>
+    </section>
+    <section id="comparative-section">
+      <h2>Producción y reconocimiento por década</h2>
+      <p style="text-align:center; max-width:600px; margin:0 auto;">
+        Comparativa entre la cantidad total de películas de ciencia ficción producidas y la cantidad de películas premiadas en cada década.
+      </p>
+      <div id="bar-chart" class="viz"></div>
+      <p class="analysis-comment" style="text-align:center; color:#F9E166; font-weight:700; margin-top:1.5rem;">
+        Se observa un crecimiento sostenido en la producción de películas de ciencia ficción, pero solo una fracción de ellas recibe premios. La brecha entre producción y reconocimiento se mantiene, aunque en décadas recientes la proporción de premiadas ha aumentado, reflejando mayor valoración crítica del género.
+      </p>
+    </section>
+    <section id="country-section">
+      <h2>País de origen de las películas</h2>
+      <p style="text-align:center; max-width:600px; margin:0 auto;">¿De dónde provienen las películas más influyentes del género? Cada barra representa un país, usando su bandera como ícono.</p>
+      <div id="country-chart" class="viz"></div>
+      <p class="analysis-comment" style="text-align:center; color:#F9E166; font-weight:700; margin-top:1.5rem;">Estados Unidos domina ampliamente la producción de ciencia ficción, pero países como Reino Unido, Japón y Francia también han aportado obras influyentes, reflejando la globalización del género.</p>
+    </section>
+    <section id="conclusion">
+      <h2>Conclusiones</h2>
+      <p style="text-align:center; max-width:700px; margin:0 auto;">
+        El análisis de la evolución del cine de ciencia ficción entre 1950 y 2020 revela tendencias clave:
+        <br><br>
+        <strong>Producción:</strong> La cantidad de películas de ciencia ficción ha crecido de forma sostenida, con un salto notable desde los años 80 y un pico en la década de 2010, reflejando el auge del género y el avance tecnológico.<br>
+        <strong>Reconocimiento:</strong> Aunque la producción ha aumentado, solo una fracción de las películas recibe premios, pero la proporción de premiadas también crece en décadas recientes, mostrando mayor reconocimiento crítico.<br>
+        <strong>Narrativa y calidad:</strong> Las películas han incrementado su duración y mejorado su recepción crítica, lo que sugiere una mayor ambición narrativa y aceptación del género.<br>
+        <strong>Diversidad temática:</strong> Los subgéneros más populares son los viajes espaciales y los alienígenas, pero la distopía y la inteligencia artificial han ganado terreno, reflejando nuevas inquietudes sociales y tecnológicas.<br>
+        <strong>Globalización:</strong> Estados Unidos lidera la producción, pero países como Reino Unido, Japón y Francia han aportado obras influyentes, evidenciando la internacionalización del género.<br><br>
+        En conjunto, el cine de ciencia ficción ha pasado de ser un nicho a convertirse en un fenómeno global, diverso y cada vez más valorado tanto por el público como por la crítica.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>Proyecto realizado por Brayan Cuyate para el curso Desarrollo Web y Diseño Visual de Información.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 

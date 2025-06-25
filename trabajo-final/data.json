@@ -1,0 +1,138 @@
+{
+  "timeline": [
+    { "decade": "1950s", "count": 18, "awarded": 2 },
+    { "decade": "1960s", "count": 22, "awarded": 3 },
+    { "decade": "1970s", "count": 35, "awarded": 5 },
+    { "decade": "1980s", "count": 48, "awarded": 7 },
+    { "decade": "1990s", "count": 54, "awarded": 8 },
+    { "decade": "2000s", "count": 67, "awarded": 12 },
+    { "decade": "2010s", "count": 85, "awarded": 15 },
+    { "decade": "2020s", "count": 19, "awarded": 4 }
+  ],
+  "comparative": [
+    { "decade": "1950s", "avg_duration": 82, "avg_score": 6.1 },
+    { "decade": "1960s", "avg_duration": 89, "avg_score": 6.4 },
+    { "decade": "1970s", "avg_duration": 101, "avg_score": 6.8 },
+    { "decade": "1980s", "avg_duration": 108, "avg_score": 6.9 },
+    { "decade": "1990s", "avg_duration": 112, "avg_score": 7.1 },
+    { "decade": "2000s", "avg_duration": 119, "avg_score": 7.3 },
+    { "decade": "2010s", "avg_duration": 124, "avg_score": 7.5 },
+    { "decade": "2020s", "avg_duration": 128, "avg_score": 7.2 }
+  ],
+  "subgenres": [
+    { "label": "Viajes espaciales", "count": 68 },
+    { "label": "Distopía", "count": 54 },
+    { "label": "Robots/IA", "count": 41 },
+    { "label": "Alienígenas", "count": 59 },
+    { "label": "Futuro postapocalíptico", "count": 32 },
+    { "label": "Mutaciones", "count": 18 },
+    { "label": "Otros", "count": 23 }
+  ],
+  "countries": [
+    { "country": "🇺🇸", "label": "Estados Unidos", "count": 210 },
+    { "country": "🇬🇧", "label": "Reino Unido", "count": 48 },
+    { "country": "🇫🇷", "label": "Francia", "count": 22 },
+    { "country": "🇯🇵", "label": "Japón", "count": 28 },
+    { "country": "🇨🇦", "label": "Canadá", "count": 14 },
+    { "country": "🇩🇪", "label": "Alemania", "count": 11 },
+    { "country": "🌍", "label": "Otros", "count": 25 }
+  ],
+  "top_movies_by_decade": {
+    "1950s": [
+      {"title": "The Day the Earth Stood Still", "year": 1951, "score": 8.0, "duration": 92, "link": "https://www.imdb.com/title/tt0043456/"},
+      {"title": "Forbidden Planet", "year": 1956, "score": 7.7, "duration": 98, "link": "https://www.imdb.com/title/tt0049223/"},
+      {"title": "Invasion of the Body Snatchers", "year": 1956, "score": 7.6, "duration": 80, "link": "https://www.imdb.com/title/tt0049366/"},
+      {"title": "Godzilla", "year": 1954, "score": 7.5, "duration": 96, "link": "https://www.imdb.com/title/tt0047034/"},
+      {"title": "The War of the Worlds", "year": 1953, "score": 7.2, "duration": 85, "link": "https://www.imdb.com/title/tt0046534/"},
+      {"title": "When Worlds Collide", "year": 1951, "score": 7.1, "duration": 83, "link": "https://www.imdb.com/title/tt0044207/"},
+      {"title": "The Incredible Shrinking Man", "year": 1957, "score": 7.0, "duration": 81, "link": "https://www.imdb.com/title/tt0050539/"},
+      {"title": "It Came from Outer Space", "year": 1953, "score": 6.9, "duration": 81, "link": "https://www.imdb.com/title/tt0045920/"},
+      {"title": "The Fly", "year": 1958, "score": 6.8, "duration": 94, "link": "https://www.imdb.com/title/tt0051622/"},
+      {"title": "Earth vs. the Flying Saucers", "year": 1956, "score": 6.7, "duration": 83, "link": "https://www.imdb.com/title/tt0049169/"}
+    ],
+    "1960s": [
+      {"title": "2001: A Space Odyssey", "year": 1968, "score": 8.3, "duration": 149, "link": "https://www.imdb.com/title/tt0062622/"},
+      {"title": "Planet of the Apes", "year": 1968, "score": 8.0, "duration": 112, "link": "https://www.imdb.com/title/tt0063442/"},
+      {"title": "Fahrenheit 451", "year": 1966, "score": 7.6, "duration": 112, "link": "https://www.imdb.com/title/tt0060390/"},
+      {"title": "The Time Machine", "year": 1960, "score": 7.5, "duration": 103, "link": "https://www.imdb.com/title/tt0054387/"},
+      {"title": "Barbarella", "year": 1968, "score": 7.2, "duration": 98, "link": "https://www.imdb.com/title/tt0062711/"},
+      {"title": "The Andromeda Strain", "year": 1969, "score": 7.1, "duration": 131, "link": "https://www.imdb.com/title/tt0066769/"},
+      {"title": "Fantastic Voyage", "year": 1966, "score": 7.0, "duration": 100, "link": "https://www.imdb.com/title/tt0060397/"},
+      {"title": "The Damned", "year": 1963, "score": 6.9, "duration": 95, "link": "https://www.imdb.com/title/tt0056881/"},
+      {"title": "First Men in the Moon", "year": 1964, "score": 6.8, "duration": 103, "link": "https://www.imdb.com/title/tt0058100/"},
+      {"title": "Robinson Crusoe on Mars", "year": 1964, "score": 6.7, "duration": 110, "link": "https://www.imdb.com/title/tt0058530/"}
+    ],
+    "1970s": [
+      {"title": "Star Wars: Episode IV", "year": 1977, "score": 8.6, "duration": 121, "link": "https://www.imdb.com/title/tt0076759/"},
+      {"title": "Close Encounters of the Third Kind", "year": 1977, "score": 8.2, "duration": 137, "link": "https://www.imdb.com/title/tt0075860/"},
+      {"title": "Solaris", "year": 1972, "score": 8.1, "duration": 167, "link": "https://www.imdb.com/title/tt0069293/"},
+      {"title": "A Clockwork Orange", "year": 1971, "score": 8.0, "duration": 136, "link": "https://www.imdb.com/title/tt0066921/"},
+      {"title": "Alien", "year": 1979, "score": 8.0, "duration": 117, "link": "https://www.imdb.com/title/tt0078748/"},
+      {"title": "Logan's Run", "year": 1976, "score": 7.7, "duration": 119, "link": "https://www.imdb.com/title/tt0074812/"},
+      {"title": "The Man Who Fell to Earth", "year": 1976, "score": 7.6, "duration": 139, "link": "https://www.imdb.com/title/tt0074851/"},
+      {"title": "Westworld", "year": 1973, "score": 7.5, "duration": 88, "link": "https://www.imdb.com/title/tt0070909/"},
+      {"title": "The Omega Man", "year": 1971, "score": 7.3, "duration": 98, "link": "https://www.imdb.com/title/tt0067525/"},
+      {"title": "Silent Running", "year": 1972, "score": 7.2, "duration": 89, "link": "https://www.imdb.com/title/tt0067756/"}
+    ],
+    "1980s": [
+      {"title": "Blade Runner", "year": 1982, "score": 8.5, "duration": 117, "link": "https://www.imdb.com/title/tt0083658/"},
+      {"title": "The Empire Strikes Back", "year": 1980, "score": 8.7, "duration": 124, "link": "https://www.imdb.com/title/tt0080684/"},
+      {"title": "E.T. the Extra-Terrestrial", "year": 1982, "score": 8.3, "duration": 115, "link": "https://www.imdb.com/title/tt0083866/"},
+      {"title": "The Thing", "year": 1982, "score": 8.2, "duration": 109, "link": "https://www.imdb.com/title/tt0084787/"},
+      {"title": "Back to the Future", "year": 1985, "score": 8.5, "duration": 116, "link": "https://www.imdb.com/title/tt0088763/"},
+      {"title": "Aliens", "year": 1986, "score": 8.3, "duration": 137, "link": "https://www.imdb.com/title/tt0090605/"},
+      {"title": "The Terminator", "year": 1984, "score": 8.1, "duration": 107, "link": "https://www.imdb.com/title/tt0088247/"},
+      {"title": "Predator", "year": 1987, "score": 7.8, "duration": 107, "link": "https://www.imdb.com/title/tt0093773/"},
+      {"title": "RoboCop", "year": 1987, "score": 7.7, "duration": 102, "link": "https://www.imdb.com/title/tt0093870/"},
+      {"title": "The Abyss", "year": 1989, "score": 7.6, "duration": 140, "link": "https://www.imdb.com/title/tt0096754/"}
+    ],
+    "1990s": [
+      {"title": "The Matrix", "year": 1999, "score": 8.7, "duration": 136, "link": "https://www.imdb.com/title/tt0133093/"},
+      {"title": "Jurassic Park", "year": 1993, "score": 8.1, "duration": 127, "link": "https://www.imdb.com/title/tt0107290/"},
+      {"title": "Terminator 2: Judgment Day", "year": 1991, "score": 8.5, "duration": 137, "link": "https://www.imdb.com/title/tt0103064/"},
+      {"title": "Gattaca", "year": 1997, "score": 8.0, "duration": 106, "link": "https://www.imdb.com/title/tt0119177/"},
+      {"title": "Starship Troopers", "year": 1997, "score": 7.8, "duration": 129, "link": "https://www.imdb.com/title/tt0120201/"},
+      {"title": "Contact", "year": 1997, "score": 7.7, "duration": 150, "link": "https://www.imdb.com/title/tt0118884/"},
+      {"title": "The Fifth Element", "year": 1997, "score": 7.6, "duration": 126, "link": "https://www.imdb.com/title/tt0119116/"},
+      {"title": "Dark City", "year": 1998, "score": 7.5, "duration": 100, "link": "https://www.imdb.com/title/tt0118929/"},
+      {"title": "12 Monkeys", "year": 1995, "score": 7.5, "duration": 129, "link": "https://www.imdb.com/title/tt0114746/"},
+      {"title": "Star Trek: First Contact", "year": 1996, "score": 7.4, "duration": 111, "link": "https://www.imdb.com/title/tt0117731/"}
+    ],
+    "2000s": [
+      {"title": "Children of Men", "year": 2006, "score": 8.5, "duration": 109, "link": "https://www.imdb.com/title/tt0206634/"},
+      {"title": "Minority Report", "year": 2002, "score": 8.1, "duration": 145, "link": "https://www.imdb.com/title/tt0181689/"},
+      {"title": "Donnie Darko", "year": 2001, "score": 8.0, "duration": 113, "link": "https://www.imdb.com/title/tt0246578/"},
+      {"title": "District 9", "year": 2009, "score": 8.0, "duration": 112, "link": "https://www.imdb.com/title/tt1136608/"},
+      {"title": "Serenity", "year": 2005, "score": 7.9, "duration": 119, "link": "https://www.imdb.com/title/tt0379786/"},
+      {"title": "A.I. Artificial Intelligence", "year": 2001, "score": 7.8, "duration": 146, "link": "https://www.imdb.com/title/tt0212720/"},
+      {"title": "Moon", "year": 2009, "score": 7.7, "duration": 97, "link": "https://www.imdb.com/title/tt1182345/"},
+      {"title": "The Prestige", "year": 2006, "score": 7.7, "duration": 130, "link": "https://www.imdb.com/title/tt0482571/"},
+      {"title": "Avatar", "year": 2009, "score": 7.6, "duration": 162, "link": "https://www.imdb.com/title/tt0499549/"},
+      {"title": "I, Robot", "year": 2004, "score": 7.5, "duration": 115, "link": "https://www.imdb.com/title/tt0343818/"}
+    ],
+    "2010s": [
+      {"title": "Inception", "year": 2010, "score": 8.8, "duration": 148, "link": "https://www.imdb.com/title/tt1375666/"},
+      {"title": "Interstellar", "year": 2014, "score": 8.6, "duration": 169, "link": "https://www.imdb.com/title/tt0816692/"},
+      {"title": "Arrival", "year": 2016, "score": 8.2, "duration": 116, "link": "https://www.imdb.com/title/tt2543164/"},
+      {"title": "Ex Machina", "year": 2014, "score": 8.1, "duration": 108, "link": "https://www.imdb.com/title/tt0470752/"},
+      {"title": "Edge of Tomorrow", "year": 2014, "score": 8.0, "duration": 113, "link": "https://www.imdb.com/title/tt1631867/"},
+      {"title": "Looper", "year": 2012, "score": 7.9, "duration": 119, "link": "https://www.imdb.com/title/tt1276104/"},
+      {"title": "Gravity", "year": 2013, "score": 7.8, "duration": 91, "link": "https://www.imdb.com/title/tt1454468/"},
+      {"title": "The Martian", "year": 2015, "score": 7.7, "duration": 144, "link": "https://www.imdb.com/title/tt3659388/"},
+      {"title": "Blade Runner 2049", "year": 2017, "score": 7.7, "duration": 164, "link": "https://www.imdb.com/title/tt1856101/"},
+      {"title": "Ready Player One", "year": 2018, "score": 7.6, "duration": 140, "link": "https://www.imdb.com/title/tt1677720/"}
+    ],
+    "2020s": [
+      {"title": "Dune", "year": 2021, "score": 8.4, "duration": 155, "link": "https://www.imdb.com/title/tt1160419/"},
+      {"title": "The Midnight Sky", "year": 2020, "score": 7.5, "duration": 118, "link": "https://www.imdb.com/title/tt10539608/"},
+      {"title": "The Wandering Earth", "year": 2020, "score": 7.4, "duration": 125, "link": "https://www.imdb.com/title/tt7605074/"},
+      {"title": "Stowaway", "year": 2021, "score": 7.3, "duration": 116, "link": "https://www.imdb.com/title/tt9203694/"},
+      {"title": "Oxygen", "year": 2021, "score": 7.2, "duration": 101, "link": "https://www.imdb.com/title/tt6341832/"},
+      {"title": "Space Sweepers", "year": 2021, "score": 7.1, "duration": 136, "link": "https://www.imdb.com/title/tt12838766/"},
+      {"title": "Outside the Wire", "year": 2021, "score": 7.0, "duration": 114, "link": "https://www.imdb.com/title/tt9684220/"},
+      {"title": "The Adam Project", "year": 2022, "score": 6.9, "duration": 106, "link": "https://www.imdb.com/title/tt2463208/"},
+      {"title": "Reminiscence", "year": 2021, "score": 6.8, "duration": 116, "link": "https://www.imdb.com/title/tt3272066/"},
+      {"title": "Chaos Walking", "year": 2021, "score": 6.7, "duration": 109, "link": "https://www.imdb.com/title/tt2076822/"}
+    ]
+  }
+} 
