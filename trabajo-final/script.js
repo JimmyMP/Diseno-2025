@@ -1,6 +1,3 @@
-
-// Carga y visualización de datos sobre cine de ciencia ficción (1950–2020)
-
 // Utilidad para cargar datos desde data.json
 document.addEventListener('DOMContentLoaded', () => {
   fetch('data.json')
@@ -395,10 +392,15 @@ document.addEventListener('mouseup', () => {
   cursor.classList.remove('active');
 });
 
-// Agranda el cursor sobre elementos interactivos
-['a', 'button', '.viz', 'img'].forEach(sel => {
-  document.querySelectorAll(sel).forEach(el => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('active'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('active'));
-  });
+// Event delegation para elementos interactivos (incluye elementos dinámicos)
+document.addEventListener('mouseover', (e) => {
+  if (e.target.matches('a, button, .viz, img, .top-movie-btn')) {
+    cursor.classList.add('active');
+  }
+});
+
+document.addEventListener('mouseout', (e) => {
+  if (e.target.matches('a, button, .viz, img, .top-movie-btn')) {
+    cursor.classList.remove('active');
+  }
 }); 

@@ -23,21 +23,24 @@ body::before {
 
 .custom-cursor {
   position: fixed;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: rgba(249,225,102,0.8);
-  border: 2px solid #61afef;
+  width: 40px;
+  height: 40px;
   pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 9999;
+  transition: all 0.15s ease;
+  background-image: url('images/lightsaber-off.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   mix-blend-mode: difference;
-  transition: width 0.15s, height 0.15s, background 0.2s;
 }
+
 .custom-cursor.active {
-  width: 48px;
-  height: 48px;
-  background: rgba(97,175,239,0.8);
+  width: 50px;
+  height: 50px;
+  background-image: url('images/lightsaber-on.svg');
+  filter: drop-shadow(0 0 10px #F9E166);
 }
 
 header {
@@ -279,7 +282,6 @@ footer {
   font-weight: 700;
   margin: 0 0.25rem 0.5rem 0.25rem;
   padding: 0.5rem 1.2rem;
-  cursor: pointer;
   transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
   box-shadow: 0 2px 8px #0003;
 }
