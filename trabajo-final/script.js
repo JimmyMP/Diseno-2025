@@ -1,4 +1,4 @@
-// script.js
+
 // Carga y visualización de datos sobre cine de ciencia ficción (1950–2020)
 
 // Utilidad para cargar datos desde data.json
@@ -57,7 +57,6 @@ function renderBarChart(data) {
   const total = data.timeline.map(d => d.count);
   const awarded = data.timeline.map(d => d.awarded);
 
-  // Plugin para dibujar líneas entre los puntos
   const connectDots = {
     id: 'connectDots',
     afterDatasetsDraw(chart) {
@@ -317,10 +316,8 @@ function renderDurationBubbleChart(data) {
       const minR = 12, maxR = 38; // Reducido el tamaño máximo
       return minR + (score - minScore) / (maxScore - minScore) * (maxR - minR);
     }
-    // Distribuir X de 1 a 10 (uno por burbuja)
     const xMin = 0, xMax = 11;
     const xPositions = movies.map((_, i) => i + 1);
-    // Ampliar el rango de Y para dar aire
     const yMin = Math.min(60, minDuration - 10);
     const yMax = Math.max(180, maxDuration + 10);
     const chart = new Chart(canvas, {
